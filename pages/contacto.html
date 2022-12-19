@@ -82,9 +82,35 @@
     </header>
 
     <main>
-      <section class="container my-5">
-       
-      </section>
+        <h1 class="my-5 display-3">Contactame</h1>
+        <section class="container bg my-5 ">
+            <article class="p-3">
+                <aside class=" col-12 col-md-12 my-4">
+                    <form class="bg-light p-3">
+                        <div class="mb-3">
+                            <label for="nombre">Nombre y apellido</label>
+                            <input type="text" id="nombre" class="form-control" />
+                            <div class="invalid-feedback">INCORRECTO</div>
+                            <div class="valid-feedback">CORRECTO</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" class="form-control"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" class="form-control"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentario">Comentario</label>
+                            <input type="text" id="comentario" class="form-control"/>
+                        </div>
+                        <button class="btn btn-primary" type="button" id="enviar">Enviar</button>
+                        
+                    </form>
+                </aside>
+            </article>     
+          </section>
     </main>
 
     <footer class="bg-dark py-3 text-light text-center">
@@ -96,5 +122,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/validacion.js"></script>
   </body>
 </html>
