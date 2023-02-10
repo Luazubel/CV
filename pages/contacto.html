@@ -86,22 +86,26 @@
         <section class="container bg my-5 ">
             <article class="p-3">
                 <aside class=" col-12 col-md-12 my-4">
-                    <form class="bg-light p-3">
+                     <form class="bg-light p-3" id="formulario">
                         <div class="mb-3">
                             <label for="nombre">Nombre y apellido</label>
                             <input type="text" id="nombre" class="form-control" required />
+                            <div class="invalid-feedback">Este campo es obligatorio</div>
                         </div>
                         <div class="mb-3">
                             <label for="empresa">Empresa</label>
                             <input type="text" id="empresa" class="form-control" required/>
+                            <div class="invalid-feedback">Este campo es obligatorio</div>
                         </div>
                         <div class="mb-3">
                             <label for="email">Email</label>
-                            <input type="text" id="email" class="form-control" required />
+                            <input type="email" id="email" class="form-control" required />
+                            <div class="invalid-feedback">Ingresa un mail válido</div>
                         </div>
                         <div class="mb-3">
                             <label for="comentario">Comentario</label>
-                            <input type="text" id="comentario" class="form-control" required/>
+                            <textarea id="comentario" class="form-control" rows="3" required></textarea>
+                            <div class="invalid-feedback">Deja un comentario de al menos 30 carácteres</div>
                         </div>
                         <button class="btn btn-primary" type="button" id="enviar">Enviar</button>
                         
